@@ -109,6 +109,11 @@ class Qualean:
             return float(self.k)
         else:
             raise NotImplementedError
+            
+    def __invertsign__(self):
+        if self.userInput != 0:
+            self.userInput = self.userInput * -1
+        return self.convert()
 
 
 
